@@ -1,6 +1,8 @@
-﻿namespace resuesus.Models
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace resuesus.Models
 {
-    public class Historico
+    public class Notificacoes
     {
         public Guid Id { get; set; }
         public string Operacao { get; set; }
@@ -9,5 +11,6 @@
         public DateTime? CreatedDate { get; set; }
         public TimeSpan? CreatedTime { get; set; }
         public bool Status { get; set; }
+        public string Distancia { get; set; }
     }
 }
